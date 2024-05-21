@@ -50,7 +50,7 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 10rem;
+  padding: 2rem 14rem;
   background-color: var(--header-background-color);
   a {
     font-size: 1.8rem;
@@ -71,7 +71,7 @@ a {
 .hero {
   display: flex;
   gap: 4rem;
-  padding: 4rem 10rem;
+  padding: 6rem 14rem;
   background-color: var(--header-background-color);
   .hero-info {
     display: flex;
@@ -94,4 +94,93 @@ a {
   img {
     height: 300px;
   }
+}
+
+.seasons-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 0;
+  h2 {
+    font-size: 3.6rem;
+    color: var(--header-background-color);
+  }
+  .seasons {
+    display: flex;
+    gap: 4rem;
+    padding: 6rem 14rem;
+    .season {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2rem;
+      width: 18rem;
+      .season-image {
+        width: 18rem;
+        height: 18rem;
+        border: solid 0.4rem var(--call-to-action-color);
+        border-radius: 2rem;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 1.6rem;
+        }
+      }
+      p {
+        font-size: 1.8rem;
+        color: var(--header-background-color);
+      }
+    }
+  }
+}
+
+.testimonial {
+  position: relative;
+  background-color: var(--testimonial-background-color);
+  padding: 12rem 22rem;
+  p {
+    font-size: 3.6rem;
+  }
+  span {
+    position: absolute;
+    right: 24rem;
+    margin-top: 1rem;
+    font-size: 2.8rem;
+    color: var(--header-background-color);
+    font-weight: bold;
+  }
+}
+
+.signup-container {
+  padding: 8rem 14rem;
+  .signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 6rem 14rem;
+    background-color: var(--call-to-action-color);
+    border-radius: 1rem;
+    .signup-info {
+      h3 {
+        font-size: 2.8rem;
+        color: var(--hero-main-text-color);
+      }
+      p {
+        font-size: 1.8rem;
+        color: var(--testimonial-background-color);
+      }
+    }
+    button {
+      width: 14rem;
+      border: solid 0.2rem var(--hero-main-text-color);
+    }
+  }
+}
+
+.footer {
+  padding: 6rem 14rem;
+  text-align: center;
+  background-color: var(--header-background-color);
+  color: var(--hero-main-text-color);
+  font-size: 1.8rem;
 }
